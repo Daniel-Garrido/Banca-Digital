@@ -1,0 +1,53 @@
+:root{
+    --primary: #6209DB;
+}
+
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+/* INICIO DE ESTILOS A LA BARRA DE NAVEGACION */
+.navbar .btn{
+    padding: .625rem 1.25rem !important;
+}
+
+.navbar{
+    min-height: 90px;
+}
+
+.btn{
+    padding: 1rem;
+}
+
+.btn-primary{
+    background-color: var(--primary);
+    border-color: var(--primary);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary);
+}
+/*FIN DE ESTILOS DE LA BARRA DE NAVEGACION*/
+
+
+/*INICIO DE LA SECCION*/
+.bg-primary{
+    background-color: var(--primary) !important;
+}
+
+.content{
+    max-width: 500px;
+}
+
+#hero{
+    height: 900px;
+}
+/*FIN DE LA SECCION*/
+
+
+@media (max-width: 990px){
+    .navbar{
+        position: relative !important;
+    }
+}
