@@ -40,14 +40,35 @@ body{
     max-width: 500px;
 }
 
-#hero{
+section{
     height: 900px;
+}
+
+
+.step::after{
+    content: "";
+    border-right: 1px solid var(--primary);
+    height: 60px;
+    position: absolute;
+    top: 34px;
+    opacity: .2;
+}
+
+.step{
+    position: relative;
+    display: flex;
+    justify-content: center;
 }
 /*FIN DE LA SECCION*/
 
 
+
+/*media querys*/
 @media (max-width: 990px){
     .navbar{
         position: relative !important;
+    }
+    section{
+        height: unset;
     }
 }
