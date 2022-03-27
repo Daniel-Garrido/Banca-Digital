@@ -1,5 +1,6 @@
 :root{
     --primary: #6209DB;
+    --grey: #f0f0f0;
 }
 
 
@@ -36,6 +37,10 @@ body{
     background-color: var(--primary) !important;
 }
 
+.bg-light{
+    background-color: var(--grey) !important;
+}
+
 .content{
     max-width: 500px;
 }
@@ -54,10 +59,31 @@ section{
     opacity: .2;
 }
 
+.call-to-action{
+    border-radius: 50px;
+}
+
+.call-to-action img{
+    max-width: 280px;
+}
+
 .step{
     position: relative;
     display: flex;
     justify-content: center;
+}
+
+.cta-form{
+    max-width: 480px;
+}
+
+.cta-form .form-control{
+    min-height: 82px;
+}
+
+.cta-form .btn{
+    top: 12px;
+    right: 12px;
 }
 /*FIN DE LA SECCION*/
 
@@ -70,5 +96,14 @@ section{
     }
     section{
         height: unset;
+    }
+
+    .call-to-action{
+        max-width: 100%;
+    }
+
+
+    .w-75{
+        width: 100% !important;
     }
 }
