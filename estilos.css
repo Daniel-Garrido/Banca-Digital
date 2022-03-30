@@ -1,6 +1,8 @@
 :root{
-    --primary: #6209DB;
+    --primary: #52BCEC;
     --grey: #f0f0f0;
+    --blue: #009EE5;
+    --hover:#006EC1;
 }
 
 
@@ -11,6 +13,14 @@ body{
 /* INICIO DE ESTILOS A LA BARRA DE NAVEGACION */
 .navbar .btn{
     padding: .625rem 1.25rem !important;
+}
+
+.bg-info{
+    background-color: var(--blue) !important;
+}
+
+.bg-light{
+    background-color: white !important;
 }
 
 .navbar{
@@ -24,13 +34,15 @@ body{
 
 .btn-primary{
     background-color: var(--primary);
-    border-color: var(--primary);
+    border-color: var(--primary) !important;
 }
 
+
 .btn-primary:hover {
-    background-color: var(--primary);
-}
-/*FIN DE ESTILOS DE LA BARRA DE NAVEGACION*/
+    transition: all 0.3s;
+    background-color: var(--hover) !important;
+}/*FIN DE ESTILOS DE LA BARRA DE NAVEGACION*/
+
 
 
 /*INICIO DE LA SECCION*/
